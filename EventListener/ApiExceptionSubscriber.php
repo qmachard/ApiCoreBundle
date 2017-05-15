@@ -6,11 +6,11 @@
  * Time: 16:27
  */
 
-namespace Qwentyn\ApiCoreBundle\EventListener;
+namespace QuentinMachard\ApiCoreBundle\EventListener;
 
 use Monolog\Logger;
-use Qwentyn\ApiCoreBundle\Api\ApiProblemException;
-use Qwentyn\ApiCoreBundle\Api\ApiResponse;
+use QuentinMachard\ApiCoreBundle\Api\ApiProblemException;
+use QuentinMachard\ApiCoreBundle\Api\ApiResponse;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;
 use Symfony\Component\HttpKernel\KernelEvents;

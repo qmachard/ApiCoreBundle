@@ -6,7 +6,7 @@
  * Time: 16:36
  */
 
-namespace Qwentyn\ApiCoreBundle\Api;
+namespace QuentinMachard\ApiCoreBundle\Api;
 
 use JMS\Serializer\SerializationContext;
 use JMS\Serializer\Serializer;

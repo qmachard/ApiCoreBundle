@@ -6,7 +6,7 @@
  * Time: 16:22
  */
 
-namespace Qwentyn\ApiCoreBundle\Api;
+namespace QuentinMachard\ApiCoreBundle\Api;
 
 use Symfony\Component\HttpKernel\Exception\HttpException;
 

@@ -4,11 +4,11 @@
  * @author Quentin Machard <quentin.machard@gmail.com>
  */
 
-namespace Qwentyn\ApiCoreBundle\Processor;
+namespace QuentinMachard\ApiCoreBundle\Processor;
 
 
-use Qwentyn\ApiCoreBundle\Api\ApiProblem;
-use Qwentyn\ApiCoreBundle\Api\ApiProblemException;
+use QuentinMachard\ApiCoreBundle\Api\ApiProblem;
+use QuentinMachard\ApiCoreBundle\Api\ApiProblemException;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 

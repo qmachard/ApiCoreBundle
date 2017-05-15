@@ -1,6 +1,6 @@
 <?php
 
-namespace Qwentyn\ApiCoreBundle\DependencyInjection;
+namespace QuentinMachard\ApiCoreBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

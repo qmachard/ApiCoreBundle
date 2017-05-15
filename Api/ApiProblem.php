@@ -1,5 +1,5 @@
 <?php
-namespace Qwentyn\ApiCoreBundle\Api;
+namespace QuentinMachard\ApiCoreBundle\Api;
 
 use Symfony\Component\HttpFoundation\Response;
 

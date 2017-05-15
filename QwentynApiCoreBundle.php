@@ -1,9 +1,9 @@
 <?php
 
-namespace Qwentyn\ApiCoreBundle;
+namespace QuentinMachard\ApiCoreBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class QwentynApiCoreBundle extends Bundle
+class QuentinMachardApiCoreBundle extends Bundle
 {
 }
