@@ -2,3 +2,5 @@ services:
   qwentyn.api_core.response:
     class: Qwentyn\ApiCoreBundle\Api\ApiResponse
     arguments: ['@jms_serializer']
+  qwentyn.api_core.form_processor:
+    class: Qwentyn\ApiCoreBundle\Processor\FormProcessor
