@@ -1,0 +1,3 @@
+qwentyn_api_core_homepage:
+    path:     /
+    defaults: { _controller: QwentynApiCoreBundle:Default:index }
