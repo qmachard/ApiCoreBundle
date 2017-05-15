@@ -1,4 +1,4 @@
 services:
-#    qwentyn_api_core.example:
-#        class: Qwentyn\ApiCoreBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+  qwentyn.api_core.response:
+    class: Qwentyn\ApiCoreBundle\Api\ApiResponse
+    arguments: ['@jms_serializer']

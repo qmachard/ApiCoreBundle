@@ -1,0 +1,14 @@
+{
+    "name": "qwentyn/api-core-bundle",
+    "description": "API Core Bundle is a base Bundle to develop API in Symfony",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Quentin Machard",
+            "email": "quentin.machard@gmail.com"
+        }
+    ],
+    "require": {
+        "jms/serializer": "^1.7"
+    }
+}
