@@ -9,6 +9,6 @@
         }
     ],
     "require": {
-        "jms/serializer": "^1.7"
+        "jms/serializer-bundle": "^1.1"
     }
 }
