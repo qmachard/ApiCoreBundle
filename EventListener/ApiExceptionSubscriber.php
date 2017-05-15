@@ -10,9 +10,9 @@ namespace Paddix\CoreBundle\EventListener;
 
 
 use Monolog\Logger;
-use Paddix\CoreBundle\Api\ApiProblem;
-use Paddix\CoreBundle\Api\ApiProblemException;
-use Paddix\CoreBundle\Api\ApiResponse;
+use Qwentyn\ApiCoreBundle\Api\ApiProblem;
+use Qwentyn\ApiCoreBundle\Api\ApiProblemException;
+use Qwentyn\ApiCoreBundle\Api\ApiResponse;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;

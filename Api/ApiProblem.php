@@ -1,5 +1,6 @@
 <?php
-namespace Paddix\CoreBundle\Api;
+namespace Qwentyn\ApiCoreBundle\Api;
+
 use Symfony\Component\HttpFoundation\Response;
 
 /**

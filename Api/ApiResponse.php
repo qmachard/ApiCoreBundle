@@ -6,7 +6,7 @@
  * Time: 16:36
  */
 
-namespace Paddix\CoreBundle\Api;
+namespace Qwentyn\ApiCoreBundle\Api;
 
 use JMS\Serializer\SerializationContext;
 use JMS\Serializer\Serializer;
