@@ -6,20 +6,15 @@
  * Time: 16:27
  */
 
-namespace Paddix\CoreBundle\EventListener;
-
+namespace Qwentyn\ApiCoreBundle\EventListener;
 
 use Monolog\Logger;
-use Qwentyn\ApiCoreBundle\Api\ApiProblem;
 use Qwentyn\ApiCoreBundle\Api\ApiProblemException;
 use Qwentyn\ApiCoreBundle\Api\ApiResponse;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;
-use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
-use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\HttpKernel\KernelInterface;
-use Symfony\Component\OptionsResolver\Exception\InvalidArgumentException;
 
 class ApiExceptionSubscriber implements EventSubscriberInterface {
 
@@ -57,21 +52,11 @@ class ApiExceptionSubscriber implements EventSubscriberInterface {
 	public function onKernelException(GetResponseForExceptionEvent $event) {
 		$e = $event->getException();
 
-		if($e instanceof InvalidArgumentException) {
-			$e = new BadRequestHttpException($e->getMessage(), $e);
+		if(!$e instanceof ApiProblemException) {
+			return;
 		}
 
-		if($e instanceof ApiProblemException) {
-			$apiProblem = $e->getApiProblem();
-		} else {
-			$statusCode = $e instanceof HttpExceptionInterface ? $e->getStatusCode() : 500;
-
-			$apiProblem = new ApiProblem($statusCode);
-		}
-
-		if ($e instanceof HttpExceptionInterface || $this->isDev) {
-			$apiProblem->set('detail', $e->getMessage());
-		}
+		$apiProblem = $e->getApiProblem();
 
 		if($this->isDev) {
 			$apiProblem->set('file', $e->getFile());
